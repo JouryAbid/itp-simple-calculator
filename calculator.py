@@ -1,26 +1,49 @@
 def add(x, y):
-    return x + y
+    if type(x) and type (y) == int:
+        return x + y
+    else:
+        return "Please enter a numerical value only."
 
 
 def subtract(x, y):
-    pass
+    if type(x) and type (y) == int:
+        return x - y
+    else:
+        return "Please enter a numerical value only."
 
 
 def divide(x, y):
-    pass
+    if type(x) and type (y) == int and y != 0:
+        return x / y
+    else:
+        return "Please enter a numerical value only. Ensure the denominator is a non-zero integer, as division by zero is not allowed."
+    
 
 
 def multiply(x, y):
-    pass
+    if type(x) and type (y) == int:
+        return x * y
+    else:
+        return "Please enter a numerical value only."
 
 
 def square(x):
-    pass
+    if type(x) == int:
+        return x * x
+    else:
+        return "Please enter integer values only"
+    
 
 
 def power(x, y):
-    pass
+    if type(x) and type (y) == int:
+        return x ** y
+    else:
+        return "Please enter a numerical value only."
 
 
 def sqrt(x):
-    pass
+    if type(x)  == int:
+        return x ** 0.5
+    else:
+        return "Please enter a numerical value only."
